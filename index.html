@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>杜王旅館</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    </head>
+    <body>
+    <div class="header-container header-theme">
+        <header class="l-header">
+            <h1 class="header-title"><a href="index.html">杜王旅館</a></h1>
+        </header>
+        <div class="menu-trigger js-toggle-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="nav-menu js-toggle-nav-menu">
+            <ul class="ul-menu">
+                <li class="ul-menu-item is-active"><a href="#about">当館について</a></li>
+                <li class="ul-menu-item is-active"><a href="#room">お部屋案内</a></li>
+                <li class="ul-menu-item is-active"><a href="#course">おすすめコース</a></li>
+                <li class="ul-menu-item is-active"><a href="#form-area">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <!--トップ画像-->
+        <section class="hero">
+            <div class="slider">
+                <div class="hero-header slideSet">
+                    <img class="hero-header-img slide js-slide-img" src="images/gaikan3.jpg" alt="旅館の外観画">
+                    <img class="hero-header-img slide js-slide-img" src="images/gaikan1.jpg" alt="旅館の外観画">
+                    <img class="hero-header-img slide js-slide-img" src="images/gaikan2.jpg" alt="旅館の外観画">
+                    <img class="hero-header-img slide js-slide-img" src="images/gaikan4.jpg" alt="旅館の外観画">
+                </div>
+                <i class="fas fa-angle-left slide-prev js-slide-prev"></i>
+                <i class="fas fa-angle-right slide-next js-slide-next"></i>
+            </div>
+       </section>
+
+        <!--about-->
+        <section id="about" class="container-theme container-ornament">
+            <div class="container">
+                <div class="container-style">
+                    <h2 class="container-title">当館について</h2>
+                </div>
+                <div class="container-body">
+                    <p class="container-body-style">
+                        杜王旅館の歴史は今から300年前に遡ります。
+                        その間先代によっておもてなしの“心”を受け継いできました。
+                        当館は小規模旅館のためよりきめ細やかな心配りやサービスを大事にしてきました。
+                        それがリピーターの数にあらわれています。
+                        「他にはないおもてなしを提供すること。そしてお客様を笑顔にすること。」
+                        創業以来このことを一番に考え旅館業を営んできました。
+                        時代が変わろうとも、その精神は決して色褪せない。
+                        そんな心を感じてもらえたらと思います。
+                        当館を利用された方にまた来たいと笑顔になって頂く、それが当館の存在意義です。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--room-->
+        <section id="room" class="container-ornament">
+             <div class="container">
+                 <div class="container-style">
+                     <h2 class="container-title">お部屋案内</h2>
+                 </div>
+                 <div >
+                     <p class="container-body-style">当館では様々な部屋をご用意しております。一例をご覧ください。</p>
+                 </div>
+                 <div class="flex-container">
+                     <div class="flex-item">
+                     <img class="room-style js-modal-open" src="images/oheya1-1.jpg" alt="お部屋1-1の画像" data-target="modal01">
+                         <p class="room-style-name">杜王の間</p>
+                     </div>
+                     <!--modal-->
+                     <div id="modal01" class="modal js-modal">
+                         <div class="modal-bg js-modal-close"></div>
+                         <div class="modal-content">
+                             <img src='images/oheya1-1.jpg' class="modal-img-style" alt="お部屋1-1の画像">
+                             <img src='images/oheya1-2.jpg' class="modal-img-style" alt="お部屋1-2の画像">
+                             <img src='images/oheya1-3.jpg' class="modal-img-style" alt="お部屋1-3の画像">
+                         </div><!--modal__inner-->
+                     </div>
+                     <!--modal閉じ-->
+                     <div class="flex-item">
+                         <img class="room-style js-modal-open" src="images/oheya4-1.jpg" alt="お部屋4-1の画像" data-target="modal02">
+                         <p class="room-style-name">松島の間</p>
+                     </div>
+                     <!--modal-->
+                     <div id="modal02" class="modal js-modal">
+                         <div class="modal-bg js-modal-close"></div>
+                         <div class="modal-content">
+                             <img src='images/oheya4-1.jpg' class="modal-img-style" alt="お部屋4-1の画像" >
+                             <img src='images/oheya4-2.jpg' class="modal-img-style" alt="お部屋4-2の画像">
+                             <img src='images/oheya4-3.jpeg' class="modal-img-style" alt="お部屋4-3の画像">
+                         </div><!--modal__inner-->
+                     </div>
+                     <!--modal閉じ-->
+                     <div class="flex-item">
+                         <img class="room-style js-modal-open" src="images/oheya6-1.jpg" alt="お部屋6-1の画像" data-target="modal03">
+                         <p class="room-style-name">広瀬の間</p>
+                     </div>
+                     <!--modal-->
+                     <div id="modal03" class="modal js-modal">
+                         <div class="modal-bg js-modal-close"></div>
+                         <div class="modal-content">
+                             <img src='images/oheya6-1.jpg' class="modal-img-style" alt="お部屋6-1の画像" >
+                             <img src='images/oheya6-2.jpg' class="modal-img-style" alt="お部屋6-2の画像">
+                             <img src='images/oheya6-3.jpg' class="modal-img-style" alt="お部屋6-3の画像">
+                         </div><!--modal__inner-->
+                     </div>
+                     <!--modal閉じ-->
+                     <div class="flex-item">
+                         <img class="room-style js-modal-open" src="images/oheya7-1.jpg" alt="" data-target="modal04">
+                         <p class="room-style-name">青葉の間</p>
+                     </div>
+                     <!--modal-->
+                     <div id="modal04" class="modal js-modal">
+                         <div class="modal-bg js-modal-close"></div>
+                         <div class="modal-content">
+                             <img src='images/oheya7-1.jpg' class="modal-img-style" alt="お部屋7-1の画像" >
+                             <img src='images/oheya7-2.jpeg' class="modal-img-style" alt="お部屋7-2の画像">
+                             <img src='images/oheya7-3.jpg' class="modal-img-style" alt="お部屋7-3の画像">
+                         </div><!--modal__inner-->
+                     </div>
+                     <!--modal閉じ-->
+                 </div>
+             </div>
+        </section>
+
+         <!--おすすめコース-->
+        <section id="course" class="container-theme container-ornament">
+            <div class="course-width">
+                <div class="container-style">
+                    <h2 class="container-title">様々なコース</h2>
+                </div>
+                <div class="">
+                    <p class="container-body-style">目的に応じたコースをご用意しております。一例をご覧ください。</p>
+                </div>
+                <div class="flex-card">
+                     <div class="card">
+                         <img class="card-style" src="images/course1.jpg" alt="">
+                         <div class="card-body">
+                             <h5 class="card-title">夫婦割</h5>
+                            <p class="card-text">夫婦の記念日に特別価格でお部屋をご用意しております。</p>
+                         </div>
+                     </div>
+                    <div class="card">
+                            <img class="card-style" src="images/course2.jpg" alt="">
+                            <div class="card-body">
+                            <h5 class="card-title">記念日割</h5>
+                            <p class="card-text">記念日に当館で特別な思い出を作りませんか。特製ケーキもご用意しております。</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-style" src="images/course3.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">出張割</h5>
+                            <p class="card-text">お一人様でも気兼ねなくご利用できるお部屋をご用意しております。ぜひ当館で出張の疲れを癒してください</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="form-area" class="container-ornament">
+
+                <div class="container">
+                    <div class="container-style">
+                        <h2 class="container-title">お問い合わせ</h2>
+                    </div>
+                    <div class="">
+                        <p class="container-body-style">何かご不明な点などございましたら気軽にご連絡ください。</p>
+                    </div>
+                    <form method="post" class="form">
+                    <label class="form-title">お名前
+                        <input type="text" class="form-style" name="" placeholder="お名前">
+                    </label>
+                    <label class="form-title">Email
+                        <input type="email" class="form-style" name="" placeholder="email">
+                    </label>
+                    <label class="form-title">お問い合わせ内容
+                        <textarea name="" class="text-style" cols="30" rows="10" placeholder="お問い合わせ"></textarea>
+                    </label>
+                        <button type="submit" class="btn">送信</button>
+
+                   </form>
+                </div>
+        </section>
+    </main>
+<footer class="footer">
+    © 2019 moriouryokan. All Rights Reserved.
+</footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+        <script src="./js/app.js"></script>
+    </body>
+</html>
